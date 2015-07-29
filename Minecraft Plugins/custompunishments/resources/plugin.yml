@@ -1,0 +1,13 @@
+name: CustomPunishments
+main: me.riskings.custompunishments.CustomPunishments
+author: Riskings
+version: 1.0-SNAPSHOT
+description: Custom punishments for networks (allows clean punishing)
+
+commands:
+        warn:
+            usage: /<command> <name> <reason>
+            description: Warns a specific player.
+        kick:
+            usage: /<command> <name> <reason>
+            description: Kicks a specific player.
