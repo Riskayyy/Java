@@ -66,11 +66,11 @@ public class CustomPunishments extends JavaPlugin implements CommandExecutor {
             }
 
             String kickMessage = str.toString();
-            if (args.length == 0) {
+            if (args.length == 1) {
                 player.sendMessage(ChatColor.RED + "Please specify a reason");
                 return true;
             }
-            if (args.length == 1) {
+            if (args.length >= 2) {
                 target.kickPlayer(ChatColor.RED + "You have been kicked by: " + ChatColor.AQUA + player.getName() + ChatColor.GOLD + "\n" + kickMessage);
                 Bukkit.broadcastMessage(
                         ChatColor.AQUA + "" + ChatColor.BOLD + player.getDisplayName() + ChatColor.RESET +
